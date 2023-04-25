@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.bodyKontakt {
+    background-image: url("../images/jonathan_FotografEmmaIvarsson-1\ \(1\).jpg");
+    height: 3000px;
+    background-size: cover;
+}
+
+/* Header*/
+.headerAbout, .headerPortfolio, .headerContact {
+    display: flex;
+    height: 500px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.headerPortfolio {
+    background-image: url(../images/mobile-portfolio.jpg);
+}
+
+.headerContact {
+    background-image: url(../images/mobile-contact.jpg);
+}
+
+.headerAbout {
+    gap: 3rem;
+    background-image: url(../images/mobile-about.jpg);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 200px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    top: 30%;
+}
+
+.headerAbout h1 {
+    font-size: 4rem;
+}
+
+.headerPortfolio h1 {
+    font-size: 2.5rem;
+}
+
+.headerContact h1 {
+    font-size: 3rem;
+}
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rowAbout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row, .navbar {
+    flex-direction: column;
+}
+
+/* article - side */
+.side {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #000;
+}
+
+.side ul {
+    list-style: none;
+}
+
+.side h5 {
+    margin-bottom: 1rem;
+}
+
+.side h4 {
+    margin-top: 1rem;
+}
+
+.sideAbout {
+    flex: 10%;
+    background-color: #999898;
+    height: 1000px;
+}
+
+/* article - main */
+.main {
+    background-color: white;
+    padding: 1rem 1rem 0rem 1rem;
+    text-align: center;
+}
+
+.main ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.main ul li {
+    background-color: rgb(211, 209, 209);
+    padding: 0.5rem;
+    border-radius: 15px;
+    text-align: left;
+    width: auto;
+    list-style: none;
+    text-align: justify;
+}
+
+#ul-main {
+    flex-direction: row;
+}
+
+#ul-contact {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#ul-portfolio li img {
+    width: 50%;
+}
+
+#ul-portfolio li video {
+    width: 50%;
+}
+
+#mainAbout {
+    margin-top: 1rem;
+}
+
+#mainAbout li {
+    background-color: #fff;
+    text-align: justify;
+}
+
+#mainIndex {
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+.main-h4 {
+    text-align: center;
+}
+
+.fa-brands.fa-github, .fa-brands.fa-instagram, .fa-brands.fa-facebook, .fa-brands.fa-linkedin {
+    font-size: 2rem;
+}
+
+span {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.imgPortfolio {
+    display: block;
+    margin: auto;
+    margin-top: 0.4rem;
+    width: 150px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+    
+.img-profile {
+    background-image: url(../images/img-profile.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0;
+    position: relative;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 600px) {
+
+    .row,
+    .navbar {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .headerPortfolio {
+        background-image: url(../images/web_ericeira_110618_072kopia.jpg);
+        padding-top: 340px;
+        padding-bottom: 250px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .headerAbout {
+        background-image: url(../images/Kontakt.jpg);
+        padding-top: 340px;
+        padding-bottom: 250px;
+    }
+    
+}

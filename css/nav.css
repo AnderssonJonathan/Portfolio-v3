@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 0.2rem 0rem;
+    border: 1px solid #000;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1rem; */
+    background-color: #fff;
+    list-style: none;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.selected {
+    border-left: 2.5px solid #000;
+    border-right: 2.5px solid #000;
+}
+
+/* Style the navigation bar links */
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+nav ul li:hover {
+    background-color: #ddd;
+}
