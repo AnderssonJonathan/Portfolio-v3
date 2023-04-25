@@ -4,16 +4,9 @@
     box-sizing: border-box;
 }
 
-/* Style the body */
 body {
     font-family: Arial;
     margin: 0;
-}
-
-.bodyKontakt {
-    background-image: url("../images/jonathan_FotografEmmaIvarsson-1\ \(1\).jpg");
-    height: 3000px;
-    background-size: cover;
 }
 
 /* Header*/
@@ -141,6 +134,10 @@ body {
     justify-content: center;
 }
 
+#ul-portfolio li {
+    text-align: center;
+}
+
 #ul-portfolio li img {
     width: 50%;
 }
@@ -149,13 +146,13 @@ body {
     width: 50%;
 }
 
-#mainAbout {
+#ul-about {
     margin-top: 1rem;
 }
 
-#mainAbout li {
+#ul-about li {
     background-color: #fff;
-    text-align: justify;
+    text-align: center;
 }
 
 #mainIndex {
@@ -214,30 +211,86 @@ a {
     background: #ddd;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (min-width: 600px) {
-
-    .row,
-    .navbar {
-        flex-direction: row;
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        align-items: center;
     }
-}
 
-@media screen and (min-width: 1000px) {
     .headerPortfolio {
-        background-image: url(../images/web_ericeira_110618_072kopia.jpg);
-        padding-top: 340px;
-        padding-bottom: 250px;
+        background-image: url(../images//desk-portfolio.jpg);
     }
 
-    .title {
-        font-size: 50px;
+    .headerPortfolio h1 {
+        font-size: 6rem;
     }
 
     .headerAbout {
-        background-image: url(../images/Kontakt.jpg);
-        padding-top: 340px;
-        padding-bottom: 250px;
+        background-image: url(../images/desk-about.jpg);
     }
-    
+
+    .headerAbout h1 {
+        font-size: 6rem;
+    }
+
+    .headerContact {
+        background-image: url(../images/desk-contact.jpg);
+    }
+
+    .headerContact h1 {
+        font-size: 6rem;
+    }
+
+    .main {
+        height: 100vh;
+        padding: 0;
+    }
+
+    .main ul {
+        padding: 1rem;
+    }
+
+    .side {
+        height: 100vh;
+        padding: 0;
+        border-bottom: none;
+        border-right: 1px solid #000;
+    }
+
+    #artcicle-portfolio {
+        padding: 1.5rem 10rem;
+    }
+
+    #index-main-article {
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-about {
+        flex-direction: row-reverse;
+    }
+
+    #main-contact {
+        justify-content: center;
+    }
+
+    #ul-about {
+        margin-top: 0;
+        padding: 2rem 4rem;
+    }
+
+    #ul-about-main {
+        padding: 2rem 2rem;
+    }
+
+    #ul-main {
+        margin-top: 2rem;
+    }
+
+    #ul-contact {
+        margin-top: 2rem;
+    }
 }
