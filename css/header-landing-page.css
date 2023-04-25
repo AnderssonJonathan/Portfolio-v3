@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    /*padding: 60px;*/
+    display: flex;
+    background-image: url(../images/14775282148_35133fce4b_o\ -\ kopia.jpg);
+    background-size: cover;
+    justify-content: center;
+    height: 100vh;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+}
+
+.circle h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+.circle h4 {
+    font-size: 30px;
+    margin: 0;
+}
