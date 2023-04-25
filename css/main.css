@@ -129,6 +129,8 @@ body {
 }
 
 #ul-contact {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;
